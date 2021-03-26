@@ -6,10 +6,10 @@ The Flesch readability index was invented by Dr. Rudolf Flesch as a tool for est
 
 Flesch readability indexes are often translated into the educational level that is usually necessary to understand a document, as shown in the table below.
 
-(https://user-images.githubusercontent.com/79537608/112584797-ee8e1380-8dce-11eb-8593-5593bdc4285d.png)
+[image] (https://user-images.githubusercontent.com/79537608/112584797-ee8e1380-8dce-11eb-8593-5593bdc4285d.png)
 
 Flesch's formula to calculate the index  𝐹  as follows.
-(https://user-images.githubusercontent.com/79537608/112584927-36ad3600-8dcf-11eb-9810-08bf166d8beb.png)
+[image] (https://user-images.githubusercontent.com/79537608/112584927-36ad3600-8dcf-11eb-9810-08bf166d8beb.png)
 
 To compute  𝐹 , use the following definitions for word, sentence, and syllable.
 
