@@ -9,8 +9,7 @@ Flesch readability indexes are often translated into the educational level that 
 Screen Shot 2021-03-26 at 00.58.55![image](https://user-images.githubusercontent.com/79537608/112584797-ee8e1380-8dce-11eb-8593-5593bdc4285d.png)
 
 Flesch's formula to calculate the index  𝐹  as follows.
-
-Screen Shot 2021-03-26 at 00.59.35![Uploading image.png…]()(https://user-images.githubusercontent.com/79537608/112584667-a0791000-8dce-11eb-8cf4-6a3a1a5d8557.png)
+Screen Shot 2021-03-26 at 00.59.35![image](https://user-images.githubusercontent.com/79537608/112584927-36ad3600-8dcf-11eb-9810-08bf166d8beb.png)
 
 To compute  𝐹 , use the following definitions for word, sentence, and syllable.
 
@@ -22,6 +21,6 @@ syllable: Use the definition given in Problem #4 of this assignment.
 
 Once  𝐹  is computed, the Flesch Grade Level ( 𝐺 ) is determined based on the table given earlier. For example, a Flesch index of 53.4 means that a high school student can comprehend the document.
 
-#This code
+# This code
 Orignial code was created in colab, path to files should be adjusted based on file location.
 Files are in txt format
