@@ -21,5 +21,5 @@ syllable: Use the definition given in Problem #4 of this assignment.
 Once  𝐹  is computed, the Flesch Grade Level ( 𝐺 ) is determined based on the table given earlier. For example, a Flesch index of 53.4 means that a high school student can comprehend the document.
 
 # This code
-Orignial code was created in colab, path to files should be adjusted based on file location.
+Orignial code was created in Google Colab, path to files should be adjusted based on the files location.
 Files are in txt format
