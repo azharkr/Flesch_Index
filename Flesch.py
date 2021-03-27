@@ -58,7 +58,7 @@ def sentences (file_name):
     contents_string = ''
     for line in file_contents:
         contents_string += str(line)
-    count_sentences = contents_string.count ('.') + contents_string.count ('?') + contents_string.count ('!')
+    count_sentences = contents_string.count ('.') + contents_string.count ('?') + contents_string.count ('!') #count the number of possible ends of a sentence
     return count_sentences
     
 def words (file_name):
@@ -104,23 +104,23 @@ def count_syllables(word):
         count_syllables('UniTy') returns 3
         count_syllables('me') returns 1
     """
-    word_lower = word.lower ()
+    word_lower = word.lower () #make function non-case sensetive
     vowels = 'aeiouy'
     vowels_position = []
     i = 0
     while i < len (word_lower):
         if word_lower [i] in vowels:
-            vowels_position += [i]
+            vowels_position += [i] #put each vowel posistion in a list
         i += 1
     syllables = len (vowels_position)
     k = 0
     while k < len (vowels_position) - 1:
-        if vowels_position [k+1] - vowels_position [k] == 1:
-            syllables -= 1
+        if vowels_position [k+1] - vowels_position [k] == 1: #vowels next to each other
+            syllables -= 1 #no new syllable, substract one from previous total
         k += 1
-    if word_lower [-1] == 'e' and word_lower [-2] not in vowels:
-        syllables -= 1
-    syllables_final = max (syllables, 1)
+    if word_lower [-1] == 'e' and word_lower [-2] not in vowels: # 'e' is last and preceded by non-vowel
+        syllables -= 1 #no new syllable, substract one from previous total
+    syllables_final = max (syllables, 1) #at least one syllable
     return (syllables_final)
 
 def total_syllables (file_name):
@@ -201,7 +201,7 @@ def flesch_index_function (file_name):
     number_sentences = sentences (file_name)
     words_per_sentence = number_words/number_sentences
     syllables_per_word = number_syllables/number_words
-    flesch_index = round (206.835 - 1.015 * words_per_sentence - 84.6 * syllables_per_word, 1)
+    flesch_index = round (206.835 - 1.015 * words_per_sentence - 84.6 * syllables_per_word, 1) #Flesch formula
     return words_per_sentence, syllables_per_word, flesch_index
 
 def main ():
